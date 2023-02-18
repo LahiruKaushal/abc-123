@@ -17,6 +17,10 @@ body{
   margin: auto;
 }
 
+.logo-main{
+  /* border-radius: 15%; */
+}
+
 .manu{
   display: inline-block;
   float: right;
@@ -76,6 +80,42 @@ body{
   color: rgba(255, 255, 250, 0.95);
   font-family: 'Arial wide', Arial, sans-serif;
   font-weight: 900;
+
+}
+
+#menuBtn{
+  outline: none;
+  background: transparent;
+  border: 1px solid transparent;
+  float: right;
+  display: none;
+}
+
+.menu-icon{
+  color: aliceblue;
+  margin: 20px;
+  margin-top: 30px;
+  font-size: 24px;
+  display: none;
+}
+
+.mobile{
+  display: none;
+}
+
+@media(max-width: 768px){
+  .desktop-menu{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .menu-icon{
+    display: block;
+  }
+  #menuBtn{
+    display:block;
+  }
 
 }
 
