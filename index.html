@@ -14,14 +14,17 @@
   <heared>
     <nav class="navbar">
       <div class="nav">
-      <img src="Assets/Logo/logo-color.png" style="height: 80px" alt="Logo">
-      <ul class="manu">
+      <img class="logo-main" src="Assets/Logo/logo-color.png" style="height: 80px" alt="Logo">
+      <ul class="manu desktop-menu">
         <li>HOME</li>
         <li>WHY US</li>
         <li>OUR PRODUCTS</li>
         <li>DELIVERY SERVICES</li>
         <li>INQUIRY/GUARANTEE</li>
       </ul>
+      <button id="menuBtn" >
+      <i class="fa-solid fa-bars menu-icon"></i>
+      </button>
     </div>
     </nav>
   </heared>
@@ -38,8 +41,22 @@
     </h1>
     
   </section>
+  
+  <div id="mobileMenu" class="mobile">
+    <ul class="mobile-menu">
+      <li>HOME</li>
+      <li>WHY US</li>
+      <li>OUR PRODUCTS</li>
+      <li>DELIVERY SERVICES</li>
+      <li>INQUIRY/GUARANTEE</li>
+    </ul>
+  </div>
 
-
+  <script>
+    let menuBtn = document.getElementById('menuBtn');
+    menuBtn.addEventListener('click', () =>{
+      console.log('clicked');
+    }) 
+  </script>
 </body>
-
 </html>
